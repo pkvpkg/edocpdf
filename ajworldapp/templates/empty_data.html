@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+{% load static %}
+
+        <div class="container-fluid p-5 bg-dark">
+            <a href="/" class="navbar-brand"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+        </div>
+
+        <div class="col-sm p-5"></div>
+
+        <div class="container">
+            <center>
+                <img src="{% static 'images/notfound.png' %}" style='height:10vw !important' alt="" class="">
+                <h3 class="display-4"> Document yet to Available </h3>
+            </center>
+        </div>
+        <div class="col-sm p-5"></div>
+        <div class="container-fluid p-5 bg-dark mt-2">
+            <p class="text-white text-center">Copyright © All rights reserved by A.J Worldwide Services Inc.</p>
+        </div>
+
+    <!-- {% load static %}
+        {% for i in file_name %}
+            <a href="/static/pdf_file/{{i}}" download class='pdf_class{{forloop.counter}}'></a>
+            <script type='text/javascript'>
+                    $(document).ready(function() {
+                        $('.pdf_class{{forloop.counter}}')[0].click();
+                            console.log("{{forloop.counter}}");
+                    });
+            </script>
+        {% endfor %}
+    {{count_file}} -->
+</body>
+
+</html>
